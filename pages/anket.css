@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Tam yüksekliği kullanır */
+    margin: 0;
+    /* Varsayılan margin'i kaldırır */
+}
+
+.survey-section {
+    text-align: center;
+    /* İçeriği ortalar */
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* İsteğe bağlı: bir çerçeve ekler */
+    border-radius: 8px;
+    /* İsteğe bağlı: köşeleri yuvarlar */
+    background-color: #f9f9f9;
+    /* İsteğe bağlı: arka plan rengi */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Yıldızları ortalar */
+}
+
+.stars {
+    direction: rtl;
+    /* Yıldızların sağdan sola sıralanmasını sağlar */
+}
+
+.stars input {
+    display: none;
+    /* Input'ları gizler */
+}
+
+.stars label {
+    font-size: 30px;
+    /* Yıldız boyutu */
+    color: #ddd;
+    /* Yıldızların varsayılan rengi */
+    cursor: pointer;
+    /* İmleç değişimi */
+}
+
+.stars input:checked~label,
+.stars label:hover,
+.stars label:hover~label {
+    color: #f39c12;
+    /* Seçili yıldız rengi */
+}
+
+.feedback {
+    margin-top: 15px;
+    /* Geri bildirim alanına boşluk ekler */
+}
+
+textarea {
+    width: 100%;
+    /* Tam genişlik */
+    padding: 10px;
+    /* İç boşluk */
+    border: 1px solid #ccc;
+    /* Çerçeve */
+}

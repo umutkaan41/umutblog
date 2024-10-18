@@ -1,0 +1,41 @@
+.sidebar {
+    flex: 3;
+    padding: 0 20px;
+}
+
+.sidebar .area {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    width: 100%;
+    background-color: plum;
+    margin-bottom: 10px;
+    font-family: "Pacifico", cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar img {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar .categories {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sidebar .categories span {
+    display: block;
+    width: calc(50% - 10px);
+    font-family: "Arvo", serif;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
